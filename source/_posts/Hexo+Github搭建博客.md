@@ -9,7 +9,7 @@ categories:
 
 <!-- read more -->
 
-## 安装Git和Node.js
+##  安装Git和Node.js
 
 Git:[Git - Downloads (git-scm.com)](https://git-scm.com/downloads)
 
@@ -24,3 +24,4 @@ npm install hexo-cli -g //安装hexo
 hexo init //初始化
 npm install 
 ```
+
