@@ -7,13 +7,17 @@ categories:
 - Blog
 ---
 
+## 前言
+
+本文主要介绍了利用Hexo+Github搭建个人博客，以及对博客Next主题进行配置。
+
 <!-- read more -->
 
 ##  安装Git和Node.js
 
-Git:[Git - Downloads (git-scm.com)](https://git-scm.com/downloads)
+1. [Git - Downloads (git-scm.com)](https://git-scm.com/downloads)
 
-Node.js:[Node.js — Download (nodejs.org)](https://nodejs.org/en/download/)
+2. [Node.js — Download (nodejs.org)](https://nodejs.org/en/download/)
 
 ## 安装Hexo
 
