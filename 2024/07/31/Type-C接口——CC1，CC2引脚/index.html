@@ -20,23 +20,33 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"asakli.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":"auto","version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Asakli&#39;s Blog">
-<meta property="og:url" content="http://asakli.github.io/index.html">
+    <meta name="description" content="本文主要介绍了Type-c接口CC1，CC2引脚的配置与功能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Type-C接口——CC1，CC2引脚">
+<meta property="og:url" content="http://asakli.github.io/2024/07/31/Type-C%E6%8E%A5%E5%8F%A3%E2%80%94%E2%80%94CC1%EF%BC%8CCC2%E5%BC%95%E8%84%9A/index.html">
 <meta property="og:site_name" content="Asakli&#39;s Blog">
+<meta property="og:description" content="本文主要介绍了Type-c接口CC1，CC2引脚的配置与功能">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/b557fea66afbd67201ddacf57140cbeb.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/bdabf99942ea645f0bbdd4a1496547cc.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Asakli/ImageSource/main/image-20240830181519458.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Asakli/ImageSource/main/image-20240830181902955.png">
+<meta property="article:published_time" content="2024-07-31T06:44:27.000Z">
+<meta property="article:modified_time" content="2024-09-02T01:38:07.860Z">
 <meta property="article:author" content="Asakli">
+<meta property="article:tag" content="Type-c">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i-blog.csdnimg.cn/blog_migrate/b557fea66afbd67201ddacf57140cbeb.png">
 
 
-<link rel="canonical" href="http://asakli.github.io/">
+<link rel="canonical" href="http://asakli.github.io/2024/07/31/Type-C%E6%8E%A5%E5%8F%A3%E2%80%94%E2%80%94CC1%EF%BC%8CCC2%E5%BC%95%E8%84%9A/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://asakli.github.io/2024/07/31/Type-C%E6%8E%A5%E5%8F%A3%E2%80%94%E2%80%94CC1%EF%BC%8CCC2%E5%BC%95%E8%84%9A/","path":"2024/07/31/Type-C接口——CC1，CC2引脚/","title":"Type-C接口——CC1，CC2引脚"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Asakli's Blog</title>
+<title>Type-C接口——CC1，CC2引脚 | Asakli's Blog</title>
   
 
 
@@ -69,7 +79,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Asakli's Blog</h1>
+      <p class="site-title">Asakli's Blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -95,7 +105,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -108,6 +118,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Type-C%E6%8E%A5%E5%8F%A3%E2%80%94%E2%80%94CC1%EF%BC%8CCC2%E5%BC%95%E8%84%9A"><span class="nav-number">1.</span> <span class="nav-text">Type-C接口——CC1，CC2引脚</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CC%E6%A3%80%E6%B5%8B%E5%8E%9F%E7%90%86"><span class="nav-number">1.1.</span> <span class="nav-text">CC检测原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CC1%EF%BC%8CCC2%E5%BC%95%E8%84%9A%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%8A%9F%E8%83%BD"><span class="nav-number">1.2.</span> <span class="nav-text">CC1，CC2引脚配置及功能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#VBUS%E8%BE%93%E5%87%BA%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.1.</span> <span class="nav-text">VBUS输出类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%9EPD%E6%A8%A1%E5%BC%8F"><span class="nav-number">1.2.2.</span> <span class="nav-text">非PD模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PD%E6%A8%A1%E5%BC%8F"><span class="nav-number">1.2.3.</span> <span class="nav-text">PD模式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="nav-number">1.3.</span> <span class="nav-text">参考链接</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -160,16 +171,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="http://asakli.github.io/2024/07/31/Type-C%E6%8E%A5%E5%8F%A3%E2%80%94%E2%80%94CC1%EF%BC%8CCC2%E5%BC%95%E8%84%9A/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -183,13 +195,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Asakli's Blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="Type-C接口——CC1，CC2引脚 | Asakli's Blog">
+      <meta itemprop="description" content="本文主要介绍了Type-c接口CC1，CC2引脚的配置与功能">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/31/Type-C%E6%8E%A5%E5%8F%A3%E2%80%94%E2%80%94CC1%EF%BC%8CCC2%E5%BC%95%E8%84%9A/" class="post-title-link" itemprop="url">Type-C接口——CC1，CC2引脚</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Type-C接口——CC1，CC2引脚
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -221,23 +233,28 @@
   
 </div>
 
+            <div class="post-description">本文主要介绍了Type-c接口CC1，CC2引脚的配置与功能</div>
         </div>
       </header>
 
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p>本文主要介绍了Type-c接口CC1，CC2引脚的配置与功能</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/07/31/Type-C%E6%8E%A5%E5%8F%A3%E2%80%94%E2%80%94CC1%EF%BC%8CCC2%E5%BC%95%E8%84%9A/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+    <div class="post-body" itemprop="articleBody"><h1 id="Type-C接口——CC1，CC2引脚"><a href="#Type-C接口——CC1，CC2引脚" class="headerlink" title="Type-C接口——CC1，CC2引脚"></a>Type-C接口——CC1，CC2引脚</h1><h2 id="CC检测原理"><a href="#CC检测原理" class="headerlink" title="CC检测原理"></a>CC检测原理</h2><p>DFP——Downstream Facing Port，也就是Host，供电端<br>UFP——Upstream Facing Port，也就是Device，设备端<br>DRP——Dual Role port，既可以做DFP，也可以做UFP。</p>
+<p>CC信号有两根线，CC1和CC2，大部分USB线（不带EMARKER芯片的线缆）里面只有一根CC线。DFP可根据两根CC线上的电压，判断是否已经插入设备，通过判断哪根CC线上有下拉电阻来判断方向（适用于C-C线）。如下图所示：</p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/b557fea66afbd67201ddacf57140cbeb.png" alt="img"></p>
+<p>注：一般的A-C线不适用CC检测，因为TYPE-A口没有CC1，CC2引脚。</p>
+<h2 id="CC1，CC2引脚配置及功能"><a href="#CC1，CC2引脚配置及功能" class="headerlink" title="CC1，CC2引脚配置及功能"></a>CC1，CC2引脚配置及功能</h2><h3 id="VBUS输出类型"><a href="#VBUS输出类型" class="headerlink" title="VBUS输出类型"></a>VBUS输出类型</h3><p><img src="https://i-blog.csdnimg.cn/blog_migrate/bdabf99942ea645f0bbdd4a1496547cc.png" alt="img"></p>
+<h3 id="非PD模式"><a href="#非PD模式" class="headerlink" title="非PD模式"></a>非PD模式</h3><p><img src="https://raw.githubusercontent.com/Asakli/ImageSource/main/image-20240830181519458.png" alt="image-20240830181519458"></p>
+<h3 id="PD模式"><a href="#PD模式" class="headerlink" title="PD模式"></a>PD模式</h3><p><img src="https://raw.githubusercontent.com/Asakli/ImageSource/main/image-20240830181902955.png" alt="image-20240830181902955"></p>
+<p>注：PD协议的VBUS输出类型主要依靠协议</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/xishining/article/details/123219866">硬件知识：USB3.0和USB2.0的区别_usb2.0接口定义-CSDN博客</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/AirCity123/article/details/103554177">Type-C协议简介（CC检测原理）_type-c cc-CSDN博客</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/one____rookie/article/details/132859403">TYPEC中的CC接法_typec的cc可以悬空吗-CSDN博客</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.chongdiantou.com/archives/57970.html">充电杂谈No3：快充协议是如何工作的？ - 充电头网 (chongdiantou.com)</a></li>
+</ol>
+
     </div>
 
     
@@ -245,103 +262,59 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Asakli
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://asakli.github.io/2024/07/31/Type-C%E6%8E%A5%E5%8F%A3%E2%80%94%E2%80%94CC1%EF%BC%8CCC2%E5%BC%95%E8%84%9A/" title="Type-C接口——CC1，CC2引脚">http://asakli.github.io/2024/07/31/Type-C接口——CC1，CC2引脚/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
 </div>
 
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
 
+  <div class="social-list">
 
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://asakli.github.io/2024/07/31/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Asakli">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Asakli's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Asakli's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/31/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">hexo+github搭建个人博客</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-07-31 14:44:27" itemprop="dateCreated datePublished" datetime="2024-07-31T14:44:27+08:00">2024-07-31</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-08-15 16:15:14" itemprop="dateModified" datetime="2024-08-15T16:15:14+08:00">2024-08-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a>
-        </span>
-    </span>
-
-  
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
 </div>
 
-        </div>
-      </header>
+          <div class="post-tags">
+              <a href="/tags/Type-c/" rel="tag"># Type-c</a>
+          </div>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>本文主要介绍了利用hexo+github搭建个人博客的基本流程。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/07/31/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/07/31/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="hexo+github搭建个人博客">
+                  <i class="fa fa-angle-left"></i> hexo+github搭建个人博客
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
+
 
 
 
